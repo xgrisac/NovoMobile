@@ -1,14 +1,17 @@
 using Microsoft.EntityFrameworkCore;
 using NovoMobile.Api.Data;
+using Microsoft.Extensions.Logging;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Adciona serviços ao contêiner.
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
+
+// Serviços
+builder.Services.AddControllers(); // Chamada para os controllers
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-// Configuração do Entity Framework Core com SQL Server
+// Config Entity Framework Core e SQL Server
 builder.Services.AddDbContext<AppDbContext>(options =>
 {
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
@@ -23,5 +26,8 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
+
+app.MapControllers();
+
 app.Run();
 

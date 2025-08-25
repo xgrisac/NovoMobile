@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("NovoMobile.Api")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ccf8747ef5c79e58d5c17f61839808580d17103c")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+11fab0e52c4951aecad422c0c892c9a071591a0d")]
 [assembly: System.Reflection.AssemblyProductAttribute("NovoMobile.Api")]
 [assembly: System.Reflection.AssemblyTitleAttribute("NovoMobile.Api")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
